@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Lobster';
+  font-family:'Roboto';
   /* background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -12,9 +14,10 @@ body{
   height:100vh; */
 }
 
-h1{
-  margin-left: 1em;
+h1, h2{
+  /* margin-left: 1em; */
   color:#444;
+  font-family: 'Lobster';
 }
 
 .page-container{
