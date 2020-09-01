@@ -1,37 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:'Roboto';
-  /* background-image: url('background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  height:100vh; */
+  font-size:1rem;
+  height:100vh;
+  background:#facd04;
+  position: relative;
+}
+
+header{
+  font-weight:bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+  margin-right: 1em;
+}
+
+.list-item{
+  display: inline;
+}
+
+.list-item + .list-item{
+  margin-left: 1em;
+}
+
+a{
+  color:#000;
+}
+
+.fab , .far{
+  font-size:3rem;
+  transition: 0.3s ease;
+}
+
+.fab:hover, .far:hover{
+  opacity:0.6;
 }
 
 h1, h2{
-  color:#444;
   font-family: 'Lobster';
 }
 
 h1{
   margin-left: 1em;
+
 }
 
 h2{
   margin-top: 0;
+  font-size:2rem;
+  text-align: center;
 }
 
 .page-container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 800px;
-  margin:0 auto;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin:0 1rem;
+  background:white;
+  padding:1em;
+  border-radius: 20px;
 }
 
 .tuner{
@@ -50,6 +85,7 @@ h2{
   border-top:10px solid #CAA302;
   padding-left:5px;
   padding-right:5px;
+  margin-bottom: 1em;
 
 }
 
@@ -58,6 +94,16 @@ h2{
   align-items: center;
   flex-direction:column;
 }
+
+.content{
+  text-align: center;
+}
+
+p{
+  font-size:1.2rem;
+  line-height:145%;
+}
+
 .string{
   width:1px;
   background:silver;
@@ -102,7 +148,6 @@ h2{
   color:black;
   background:white;
   cursor:pointer;
-  /* box-shadow:10px 10px 5px #000; */
 }
 
 .note:hover, .playing{
@@ -172,4 +217,37 @@ input[type="radio"]{
 .green{
   background: rgb(15,62,18);
   background: linear-gradient(180deg, rgba(15,62,18,1) 33%, rgba(158,134,21,1) 33%, rgba(249,214,53,1) 34%, rgba(158,134,21,1) 35%, rgba(15,62,18,1) 35%, rgba(15,62,18,1) 66%, rgba(158,134,21,1) 66%, rgba(249,214,53,1) 67%, rgba(158,134,21,1) 68%, rgba(15,62,18,1) 68%);
+}
+
+footer{
+  color:black;
+}
+
+.reference{
+  display: block;
+  padding:10px 0 10px;
+  text-decoration:none;
+  text-align:center;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.reference:hover{
+  opacity:0.6;
+}
+
+@media screen and (min-width:650px){
+  .page-container{
+    grid-template-columns: 1fr 1fr;
+    margin:0 auto;
+  }
+  .content{
+    text-align: left;
+  }
+
+  footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+  }
 }
