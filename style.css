@@ -21,6 +21,7 @@ header{
 ul{
   list-style: none;
   margin-right: 1em;
+  margin-left: 0;
 }
 
 .list-item{
@@ -97,6 +98,11 @@ h2{
 
 .content{
   text-align: center;
+}
+
+.content p{
+  padding-left:.75rem;
+  padding-right:.75rem;
 }
 
 p{
