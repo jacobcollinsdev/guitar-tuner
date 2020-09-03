@@ -35,13 +35,7 @@ function playNote(e){
 }
 
 function updateBackground(e){
-  fretboard.classList.remove('dark');
-  fretboard.classList.remove('light');
-  fretboard.classList.remove('green');
-  fretboard.classList.remove('red');
-  fretboard.classList.remove('blue');
-  fretboard.classList.remove('brown');
-  fretboard.classList.add(e.target.id);
+  fretboard.className = `fretboard ${e.target.id}`;
 }
 
 function playSound(e){
